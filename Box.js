@@ -12,13 +12,13 @@ class Box {
       World.add(world, this.body);
     }
     display(){
-    if (this.body.speed>3){
+    if (this.body.speed>3 ){
       World.remove(world,this.body);
       push();
       this.visibility = this.visibility-5
-      tint(255,this.visibility);
-      
+      tint(255,this.visibility);  
       pop();
+      
     }
     else{
       var pos =this.body.position;
